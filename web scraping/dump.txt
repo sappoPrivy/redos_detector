@@ -1,0 +1,20 @@
+1. Set up scraper
+    * search Github for web app, or similar, in python
+    * enter first 10(50) projects
+        * run git grep on each? 
+        * download?
+
+The github search url:
+https://github.com/search?q=regex+language%3APython&type=code
+* search: "regex" in the code. 
+* language: "python"
+
+Find HTML object / tag
+<div class="Code-module__headerInnerFlex__W73Fm"><div class="Header-module__avatar__AAPpl" style="margin-right: var(--base-size-8);"><img data-component="Avatar" class="Code-module__avatar__k37wZ prc-Avatar-Avatar-0xaUi" alt="" data-square="" width="16" height="16" data-testid="github-avatar" src="https://github.com/apache.png?size=32" style="--avatarSize-regular: 16px;"></div><div class="search-title Header-module__title__QUX7e Header-module__smallTitle__oGi1V"><div title="apache/kvrocks-controller · x.py" class="EllipsisOverflow-module__ellipsisOverflow__LJoe4 EllipsisOverflow-module__directionRtl__yotvN"><a class="prc-Link-Link-9ZwDx" data-component="Link" href="/apache/kvrocks-controller" data-hovercard-url="/apache/kvrocks-controller/hovercard" data-hovercard-type="repository" octo-click="hovercard-link-click" octo-dimensions="link_type:self" aria-keyshortcuts="Alt+ArrowUp" style="color: var(--fgColor-default); font-weight: bold; direction: ltr; unicode-bidi: bidi-override;"><span>apache/kvrocks-controller</span></a>&nbsp;·&nbsp;<a class="Code-module__filePathLink__AW6te prc-Link-Link-9ZwDx" data-component="Link" href="/apache/kvrocks-controller/blob/c89a276a1bdb81191de4485f2a6f4a6685e98706/x.py#L30" data-testid="link-to-search-result">x.py</a></div></div></div>
+
+All names: 
+Code-module__headerInnerFlex__W73Fm
+
+Inside the repo: 
+<div title="apache/kvrocks-controller
+

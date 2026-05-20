@@ -17,6 +17,12 @@ search_topics = "https://github.com/search?q=web&type=repositories"
 # https://github.com/search?q=web+app+language%3APython+language%3AJavaScript&type=repositories&l=JavaScript
 # 
 
+import requests
+from bs4 import BeautifulSoup
+import json
+  
+url = 'https://github.com/psf/requests'
+
 
 dico = []
 
