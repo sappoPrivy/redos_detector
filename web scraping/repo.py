@@ -2,16 +2,20 @@ import requests
 import json
 import ast
 
-filename = "web scraping/regex-repos-java.txt"
+filename = "web-repos-python.txt"
 # filename = "web scraping/regex-repos-python.txt"
 
 headers = {
-  'Authorization': 'Token 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'
+  'Authorization': 'Token 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',
+  'Accept': 'application/vnd.github.v3.text-match+json'
 }
 
 urlone = "https://github.com/"
 
 url = "https://api.github.com/repos/"
+
+# append the full_name
+urltwo = "https://api.github.com/search/code?q=regex+in:file+repo:"
 
 all_links = []
 
@@ -26,8 +30,15 @@ with open(filename) as file:
 
         for d in dict:
             link = urlone + d
-            print(link)
+            # print(link)
             all_links.append(link)
+
+            linktwo = urltwo + d
+            req = requests.get(linktwo, headers=headers).json()
+            print(linktwo)
+            print(req)
+
+            results = [item["matches"] for item in req['text_matches']]
             
             # req = requests.get(link, headers=headers).json()
             # name = d.split("/")
@@ -35,6 +46,6 @@ with open(filename) as file:
             # openfile = name + "user.txt"
             # print(openfile)
 
-        with open("links-java.txt", 'w', encoding='utf-8') as f:
-            json.dump(all_links, f, ensure_ascii=False)
+        with open("web-regex-py.txt", 'w', encoding='utf-8') as f:
+            json.dump(results, f, ensure_ascii=False)
 

@@ -11,7 +11,8 @@ import re
 # python, java, etc
 # search for "regex", import re?
 # select pages / nr of results?
-url = "https://api.github.com/search/code?q=regex +in:file +language:java"
+# url = "https://api.github.com/search/code?q=regex +in:file +language:java"
+url = "https://api.github.com/search/repositories?q=web+app+language:python&sort=stars&order=desc"
 
 # Auth Token for Github 
 headers = {
@@ -27,8 +28,8 @@ for i in range(1):
     # print(req)
 
     # get the name of the repos
-    results = [item["repository"]["full_name"] for item in req["items"]]
+    results = [item["full_name"] for item in req["items"]]
     # print(results)
     # save the file, encoding needed for windows
-    with open('regex-repos-java.txt', 'w', encoding='utf-8') as f:
+    with open('web-repos-python.txt', 'w', encoding='utf-8') as f:
         json.dump(results, f, ensure_ascii=False)
