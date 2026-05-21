@@ -44,3 +44,13 @@ for page in range(1, 99):
 
 df = pd.DataFrame(dico)
 '''
+
+
+# headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36'}
+
+# url = "https://github.com/search?q=regex+language%3APython&type=code"
+# https://github.com/search?q=web+app+language%3APython+language%3AJavaScript&type=repositories&l=JavaScript
+# https://github.com/search?q=regex+language%3APython&type=code
+
+  
+# url = 'https://github.com/psf/requests'

@@ -2,14 +2,18 @@ import requests
 import json
 import ast
 
-# filename = "regex-repos-java.txt"
-filename = "web scraping/regex-repos-python.txt"
+filename = "web scraping/regex-repos-java.txt"
+# filename = "web scraping/regex-repos-python.txt"
 
 headers = {
   'Authorization': 'Token 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'
 }
 
+urlone = "https://github.com/"
+
 url = "https://api.github.com/repos/"
+
+all_links = []
 
 with open(filename) as file:
     for line in file:
@@ -21,15 +25,16 @@ with open(filename) as file:
         print(type(dict))
 
         for d in dict:
-            link = url + d
+            link = urlone + d
             print(link)
+            all_links.append(link)
+            
+            # req = requests.get(link, headers=headers).json()
+            # name = d.split("/")
+            # name = ", ".join(name)
+            # openfile = name + "user.txt"
+            # print(openfile)
 
-            req = requests.get(link, headers=headers).json()
-            name = d.split("/")
-            name = ", ".join(name)
-            openfile = name + "user.txt"
-            print(openfile)
-
-            with open(openfile, 'w', encoding='utf-8') as f:
-                json.dump(req, f, ensure_ascii=False)
+        with open("links-java.txt", 'w', encoding='utf-8') as f:
+            json.dump(all_links, f, ensure_ascii=False)
 
