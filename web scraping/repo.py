@@ -2,6 +2,10 @@ import requests
 import json
 import ast
 
+# Code can: 
+# generate url for github search, "regex" inside code 
+# based on file containing "user/repo" in list
+
 filename = "web-repos-python.txt"
 # filename = "web scraping/regex-repos-python.txt"
 
@@ -17,6 +21,14 @@ url = "https://api.github.com/repos/"
 # append the full_name
 urltwo = "https://api.github.com/search/code?q=regex+in:file+repo:"
 
+urlregex = "https://github.com/search?q=repo%3A"
+# user: Flolagale
+filler = "%2F" 
+# repo: mailin
+reg = "%20regex&type=code"
+
+# Add all together
+
 all_links = []
 
 with open(filename) as file:
@@ -29,23 +41,18 @@ with open(filename) as file:
         print(type(dict))
 
         for d in dict:
-            link = urlone + d
+            user = d.split("/")[0]
+            repo = d.split("/")[1]
+            link = urlregex + user + filler + repo + reg
             # print(link)
-            all_links.append(link)
+            
 
             linktwo = urltwo + d
-            req = requests.get(linktwo, headers=headers).json()
-            print(linktwo)
-            print(req)
+            all_links.append(link)
+            # req = requests.get(linktwo, headers=headers).json()
+            # print(linktwo)
+            # print(req)
 
-            results = [item["matches"] for item in req['text_matches']]
-            
-            # req = requests.get(link, headers=headers).json()
-            # name = d.split("/")
-            # name = ", ".join(name)
-            # openfile = name + "user.txt"
-            # print(openfile)
-
-        with open("web-regex-py.txt", 'w', encoding='utf-8') as f:
-            json.dump(results, f, ensure_ascii=False)
+        with open("web-regex-py-links-2.txt", 'w', encoding='utf-8') as f:
+            json.dump(all_links, f, ensure_ascii=False)
 
