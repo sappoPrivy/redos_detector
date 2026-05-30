@@ -1,0 +1,880 @@
+### Testing /[.*+?^${}()|[\]\\]/ ###
+Input regex: [.*+?^${}()|[\]\\]
+TIME: 0.061742874 (s)
+Regex compile error
+
+### Testing '(.*)\\s+\\[(.*)\\]' ###
+Input regex: (.*)\s+\[(.*)\]
+1: <14 : 2.507142857142857 : `!KhbweZrnJcKD.@t5qy#Rw!7GA	T*|,AKw!7GA	@t5qy#Rw!7GA	T*|,AD'5c,'fPA@??@APf',c5'D!wR#	#1X&qW+\s\\'5c,'fPA@??@APf',c5'D!wR#	#1X&qW+\s\\s\+\\d>
+===Initiate End===
+Node Coverage: 14/14
+===Genetic Algorithm End===
+Node Coverage: 14/14
+Normal fail
+TIME: 36.4797972 (s)
+Attack failed
+
+### Testing (.*)\\s+\\[(.*)\\] ###
+Input regex: (.*)\\s+\\[(.*)\\]
+1: <12 : 6.1 : \s\\s\+s\>
+===Initiate End===
+Node Coverage: 12/12
+find attack string when cross
+===Genetic Algorithm End===
+Node Coverage: 12/12
+Vulnerable: \9133\3773524090324923797814929228560423547834848801832231881310\ss\s\+sss\\\s\s\COqEORFRfbe28hThmgss\\\s\+sXUBORBZQK^)]:,(+,<-])-_[?/$:?!!%$;.\$54217853)("]~|:_#'^!+:%#@<$'^`)`/:^]/'-#,,({$>+:$@]9463685327187588173117684
+100038 : 450.6216216216216 : \9133\3773524090324923797814929228560423547834848801832231881310\ss\s\+sss\\\s\s\COqEORFRfbe28hThmgss\\\s\+sXUBORBZQK^)]:,(+,<-])-_[?/$:?!!%$;.\$54217853)("]~|:_#'^!+:%#@<$'^`)`/:^]/'-#,,({$>+:$@]9463685327187588173117684
+100029 : 456.75342465753425 : \9133\3773524090324923797814929228560423547834848801832231881310\ss\s\+sss\\\s\s\COqEORFRfbe28hThmgss\\\s\+sXUBORBZQK^)]:,(+,<-])-_[?/$:?!!%$;.\$54217853)("]~|:_#'^!+:%#@<$'^`)`/:^]/'-#,,({$>+:$@]9463685327187588173117
+100029 : \9133\3773524090324923797814929228560423547834848801832231881310\ss\s\+sss\\\s\s\COqEORFRfbe28hThmgss\\\s\+sXUBORBZQK^)]:,(+,<-])-_[?/$:?!!%$;.\$54217853)("]~|:_#'^!+:%#@<$'^`)`/:^]/'-#,,({$>+:$@]9463685327187588173117
+100029 : 0 : \9133\3773524090324923797814929228560423547834848801832231881310\ss\s\+sss\\\s\s\COqEORFRfbe28hThmgss\\\s\+sXUBORBZQK^)]:,(+,<-])-_[?/$:?!!%$;.\$54217853)("]~|:_#'^!+:%#@<$'^`)`/:^]/'-#,,({$>+:$@]9463685327187588173117
+100617 : \9133\3773524090324923797814929228560423547834848801832231881310\ss\s\+sss\\\s\s\COqEORFRfbe28hThmgss\\\s\+sXUBORBZQK^)]:,(+,<-])-_[?/$:?!!%$;.\$54217853)("]~|:_#'^!+:%#@<$'^`)`/:^]/'-#,,({$>+:$@]9463685327187588173117
+TIME: 52.097916211 (s)
+Attack failed
+
+### Testing (.*)\s+\[(.*)\] ###
+Input regex: (.*)\s+\[(.*)\]
+4: <8 : 9.6 : \s+\><9 : 68.50769230769231 : F(-M)>}co6oSHX6; /-f	HUI&7PL
+D:S @g		;AEw\*4'8=:RIW0_=v/4Fa2:><14 : 48.09230769230769 : k	8-6~JV{G/{_[c0
+ZXSu	XrrS&F(|2J==VCov6HyBdNt0z<)Qo
+QB'D@
+pAK"><15 : 8.761904761904763 : ck X	[q!H	6Vse_r+jGr;E^	J[]mf\0]IE~='j2
+>
+===Initiate End===
+Node Coverage: 15/15
+find attack string when cross
+===Genetic Algorithm End===
+Node Coverage: 15/15
+Vulnerable: FF(-M)>}co6oSHX6; /oSHX6F(-M)>}co6>q!H	6Vse_r+jGr;E^	J[]mf\0]IEzH@tkYtU=P4p?~='H	6Vse_r+jG(-M)>}co6oSHX6F(-M)>}co6}co6oSHX6F(-M)>}co6>q!H	6Vse_r+jGr;E=:RIW0_=(F6XHSo6oc}>)M-(F-f	r;E^	J[]mf\0]IE~='j2
+
+100032 : 500.16 : FF(-M)>}co6oSHX6; /oSHX6F(-M)>}co6>q!H	6Vse_r+jGr;E^	J[]mf\0]IEzH@tkYtU=P4p?~='H	6Vse_r+jG(-M)>}co6oSHX6F(-M)>}co6}co6oSHX6F(-M)>}co6>q!H	6Vse_r+jGr;E=:RIW0_=(F6XHSo6oc}>)M-(F-f	r;E^	J[]mf\0]IE~='j2
+
+100021 : 505.15656565656565 : FF(-M)>}co6oSHX6; /oSHX6F(-M)>}co6>q!H	6Vse_r+jGr;E^	J[]mf\0]IEzH@tkYtU=P4p?~='H	6Vse_r+jG(-M)>}co6oSHX6F(-M)>}co6}co6oSHX6F(-M)>}co6>q!H	6Vse_r+jGr;E=:RIW0_=(F6XHSo6oc}>)M-(F-f	r;E^	J[]mf\0]IE~='j
+100021 : FF(-M)>}co6oSHX6; /oSHX6F(-M)>}co6>q!H	6Vse_r+jGr;E^	J[]mf\0]IEzH@tkYtU=P4p?~='H	6Vse_r+jG(-M)>}co6oSHX6F(-M)>}co6}co6oSHX6F(-M)>}co6>q!H	6Vse_r+jGr;E=:RIW0_=(F6XHSo6oc}>)M-(F-f	r;E^	J[]mf\0]IE~='j
+100021 : 0 : FF(-M)>}co6oSHX6; /oSHX6F(-M)>}co6>q!H	6Vse_r+jGr;E^	J[]mf\0]IEzH@tkYtU=P4p?~='H	6Vse_r+jG(-M)>}co6oSHX6F(-M)>}co6}co6oSHX6F(-M)>}co6>q!H	6Vse_r+jGr;E=:RIW0_=(F6XHSo6oc}>)M-(F-f	r;E^	J[]mf\0]IE~='j
+100741 : FF(-M)>}co6oSHX6; /oSHX6F(-M)>}co6>q!H	6Vse_r+jGr;E^	J[]mf\0]IEzH@tkYtU=P4p?~='H	6Vse_r+jG(-M)>}co6oSHX6F(-M)>}co6}co6oSHX6F(-M)>}co6>q!H	6Vse_r+jGr;E=:RIW0_=(F6XHSo6oc}>)M-(F-f	r;E^	J[]mf\0]IE~='j
+TIME: 44.421771097 (s)
+Attack failed
+
+### Testing [\\/]kernel-([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\.json$ ###
+Input regex: [\\/]kernel-([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\.json$
+1: <3 : 1.125 : n$R?gwF"mY6Pf\	>
+===Initiate End===
+Node Coverage: 3/23
+===Genetic Algorithm End===
+Node Coverage: 3/23
+Normal fail
+TIME: 0.323003789 (s)
+Attack failed
+
+### Testing (\?\.)?\[\".*\"\] ###
+Input regex: (\?\.)?\[\".*\"\]
+1: <12 : 3.4 : xrXM@
+eQP-(2}6q9a6I?.`ot{F#O;wj["2}.6m_)#Kl,7nv"]>
+===Initiate End===
+Node Coverage: 12/12
+===Genetic Algorithm End===
+Node Coverage: 12/12
+Normal fail
+TIME: 91.352699204 (s)
+Attack failed
+
+### Testing ^[0-9]*$ ###
+Input regex: ^[0-9]*$
+1: <6 : 3.5 : 0>
+===Initiate End===
+Node Coverage: 6/6
+===Genetic Algorithm End===
+Node Coverage: 6/6
+Normal fail
+TIME: 0.09615272 (s)
+Attack failed
+
+### Testing ^(?!-)[A-Za-z0-9-]{1,63}(?<!-)$ ###
+Input regex: ^(?!-)[A-Za-z0-9-]{1,63}(?<!-)$
+4: <6 : 3.0 : -><11 : 6.0 : 6pY><13 : 6.25 : gj-><12 : 6.5 : a>
+===Initiate End===
+Node Coverage: 15/15
+===Genetic Algorithm End===
+Node Coverage: 15/15
+Normal fail
+TIME: 2.945212876 (s)
+Attack failed
+
+### Testing ^[a-z.]+$ ###
+Input regex: ^[a-z.]+$
+2: <5 : 3.0 : a><6 : 3.5 : a>
+===Initiate End===
+Node Coverage: 6/6
+===Genetic Algorithm End===
+Node Coverage: 6/6
+Normal fail
+TIME: 5.397379611 (s)
+Attack failed
+
+### Testing ^v(\d+)\.\d+\.\d+.json ###
+Input regex: ^v(\d+)\.\d+\.\d+.json
+8: <5 : 2.5 : v><8 : 3.0 : v0><10 : 2.75 : v0.><11 : 2.8 : v0.0><13 : 2.6666666666666665 : v0.0.><14 : 2.7142857142857144 : v0.0.0><15 : 2.5 : v0.0.0j><16 : 1.75 : v0.0.0jjson>
+===Initiate End===
+Node Coverage: 16/16
+===Genetic Algorithm End===
+Node Coverage: 16/16
+Normal fail
+TIME: 22.914004824 (s)
+Attack failed
+
+### Testing height="[\d\.]+pt" ###
+Input regex: height="[\d\.]+pt"
+3: <3 : 0.3333333333333333 : height="><5 : 0.6 : height="0><6 : 0.5384615384615384 : height="0pt">
+===Initiate End===
+Node Coverage: 6/6
+===Genetic Algorithm End===
+Node Coverage: 6/6
+Normal fail
+TIME: 10.398470561 (s)
+Attack failed
+
+### Testing (\w+) +(\w+) +(\w+) +(\w+) +(\w+:\w+|\w+) (\?|tty\w+) +(\w+:\w+:\w+) +(.+)\n ###
+Input regex: (\w+) +(\w+) +(\w+) +(\w+) +(\w+:\w+|\w+) (\?|tty\w+) +(\w+:\w+:\w+) +(.+)\n
+1: <42 : 44.23684210526316 : 4 Qc jQc jTQc jc jQc jc jTc jT jTc jT S jQc jTQc jT SB:wOQ3Ovtc jQc jc jTSB>
+===Initiate End===
+Node Coverage: 42/66
+find attack string when cross
+===Genetic Algorithm End===
+Node Coverage: 48/66
+Vulnerable: 4Qc jQcB7MQWDYXMWCRGDYJUDFSLRURAHGRIEEDQMWENSXXNGJFGCKLYDZVNXQBXXIGZLXOERS6317 17545066658hjiwwf 01024702221564370532845922299964382495333787446793430024UWNSFZWVAUJQBBIHPNCJTHWNTQGRSJCFWNPRVICPRVCJHZVBOD2HQh0
+100041 : 478.6650717703349 : 4Qc jQcB7MQWDYXMWCRGDYJUDFSLRURAHGRIEEDQMWENSXXNGJFGCKLYDZVNXQBXXIGZLXOERS6317 17545066658hjiwwf 01024702221564370532845922299964382495333787446793430024UWNSFZWVAUJQBBIHPNCJTHWNTQGRSJCFWNPRVICPRVCJHZVBOD2HQh0
+100011 : 490.25 : 4Qc jQcB7MQWDYXMWCRGDYJUDFSLRURAHGRIEEDQMWENSXXNGJFGCKLYDZVNXQBXXIGZLXOERS6317 17545066658hjiwwf 01024702221564370532845922299964382495333787446793430024UWNSFZWVAUJQBBIHPNCJTHWNTQGRSJCFWNPRVICPRVCJHZVBOD
+100011 : 4Qc jQcB7MQWDYXMWCRGDYJUDFSLRURAHGRIEEDQMWENSXXNGJFGCKLYDZVNXQBXXIGZLXOERS6317 17545066658hjiwwf 01024702221564370532845922299964382495333787446793430024UWNSFZWVAUJQBBIHPNCJTHWNTQGRSJCFWNPRVICPRVCJHZVBOD
+100011 : 0 : 4Qc jQcB7MQWDYXMWCRGDYJUDFSLRURAHGRIEEDQMWENSXXNGJFGCKLYDZVNXQBXXIGZLXOERS6317 17545066658hjiwwf 01024702221564370532845922299964382495333787446793430024UWNSFZWVAUJQBBIHPNCJTHWNTQGRSJCFWNPRVICPRVCJHZVBOD
+100973 : 4Qc jQcB7MQWDYXMWCRGDYJUDFSLRURAHGRIEEDQMWENSXXNGJFGCKLYDZVNXQBXXIGZLXOERS6317 17545066658hjiwwf 01024702221564370532845922299964382495333787446793430024UWNSFZWVAUJQBBIHPNCJTHWNTQGRSJCFWNPRVICPRVCJHZVBOD
+TIME: 34.2684809 (s)
+Attack failed
+
+### Testing ^(?=.*[A-Z].*[A-Z]) ###
+Input regex: ^(?=.*[A-Z].*[A-Z])
+3: <7 : 4.5 : ^><10 : 5.0 : ^A><12 : 6.5 : ^AB>
+===Initiate End===
+Node Coverage: 12/12
+===Genetic Algorithm End===
+Node Coverage: 12/12
+Normal fail
+TIME: 26.608453526 (s)
+Attack failed
+
+### Testing (?=.*[^0-9a-zA-Z]) ###
+Input regex: (?=.*[^0-9a-zA-Z])
+1: <9 : 3.6 : ?=.*>
+===Initiate End===
+Node Coverage: 9/9
+===Genetic Algorithm End===
+Node Coverage: 9/9
+Normal fail
+TIME: 259.177517224 (s)
+Attack failed
+
+### Testing (\s+)#(\w*[a-zA-Z]+\w*)\b ###
+Input regex: (\s+)#(\w*[a-zA-Z]+\w*)\b
+4: <4 : 3.25 : a-z><7 : 3.140625 : @mK{EcZjKfCe3*%~,+Ncb'%s6hdW\bg.[S&]H_pVi&`QPQ~p&*ho]qK!K6P[q><12 : 3.4615384615384617 : A/	
+Dl|tY&xx)<"\s+u!,3AFS~I^[ #<{%;Hw
+"(t&^`uJ_mM#C|GH7G_t	hYtR^><17 : 3.4705882352941178 : _o'}Tf0y*Dj;z5D~0yTzpESJ^z4B}
+#O>
+===Initiate End===
+Node Coverage: 17/17
+find attack string when cross
+===Genetic Algorithm End===
+Node Coverage: 17/17
+Vulnerable: 
+
+
+		  	
+
+	
+	 					  	 		    	
+
+			 
+ 	
+	 	
+
+
+  
+ 			
+	
+	  
+		
+			
+ 
+	
+  		
+  		
+
+
+		 	  		
+  	 		  
+	
+			 
+  
+
+
+	 	
+	 
+ 			
+
+	    		 	  
+		 	
+
+
+
+
+	
+100027 : 444.56444444444446 : 
+
+
+		  	
+
+	
+	 					  	 		    	
+
+			 
+ 	
+	 	
+
+
+  
+ 			
+	
+	  
+		
+			
+ 
+	
+  		
+  		
+
+
+		 	  		
+  	 		  
+	
+			 
+  
+
+
+	 	
+	 
+ 			
+
+	    		 	  
+		 	
+
+
+
+
+	
+100027 : 444.56444444444446 : 
+
+
+		  	
+
+	
+	 					  	 		    	
+
+			 
+ 	
+	 	
+
+
+  
+ 			
+	
+	  
+		
+			
+ 
+	
+  		
+  		
+
+
+		 	  		
+  	 		  
+	
+			 
+  
+
+
+	 	
+	 
+ 			
+
+	    		 	  
+		 	
+
+
+
+
+	
+100027 : 
+
+
+		  	
+
+	
+	 					  	 		    	
+
+			 
+ 	
+	 	
+
+
+  
+ 			
+	
+	  
+		
+			
+ 
+	
+  		
+  		
+
+
+		 	  		
+  	 		  
+	
+			 
+  
+
+
+	 	
+	 
+ 			
+
+	    		 	  
+		 	
+
+
+
+
+	
+100027 : 0 : 
+
+
+		  	
+
+	
+	 					  	 		    	
+
+			 
+ 	
+	 	
+
+
+  
+ 			
+	
+	  
+		
+			
+ 
+	
+  		
+  		
+
+
+		 	  		
+  	 		  
+	
+			 
+  
+
+
+	 	
+	 
+ 			
+
+	    		 	  
+		 	
+
+
+
+
+	
+101455 : 
+
+
+		  	
+
+	
+	 					  	 		    	
+
+			 
+ 	
+	 	
+
+
+  
+ 			
+	
+	  
+		
+			
+ 
+	
+  		
+  		
+
+
+		 	  		
+  	 		  
+	
+			 
+  
+
+
+	 	
+	 
+ 			
+
+	    		 	  
+		 	
+
+
+
+
+	
+TIME: 116.147979509 (s)
+Attack failed
+
+### Testing /\{\{intl\s+([^}]+)\}\}/g ###
+Input regex: \{\{intl\s+([^}]+)\}\}
+4: <3 : 0.375 : /{{intl><7 : 0.8888888888888888 : /{{intl
+><9 : 1.2 : /{{intl
+><10 : 0.9285714285714286 : /{{intl
+}}/g>
+===Initiate End===
+Node Coverage: 10/10
+find attack string when cross
+===Genetic Algorithm End===
+Node Coverage: 10/10
+Vulnerable: /{{intl		 		
+ 	
+	 		
+
+
+
+  
+	
+	 
+	
+ 		
+	
+	
+
+
+
+
+
+  
+	 
+ 	 		 		
+	
+	 
+
+		 
+		 
+
+ /gA7cg						 	   		 		
+ 	/{{intl		/{{intl		 		
+ 	
+	 		
+
+
+
+  
+	
+	 
+	
+ 		
+	
+	
+
+
+
+
+
+  
+	 
+ 	 		 		
+	
+	 
+
+		 
+		 
+
+ /gA7cgEWIj{nZcEKFsIV3ZMJD
+100079 : 376.2368421052632 : /{{intl		 		
+ 	
+	 		
+
+
+
+  
+	
+	 
+	
+ 		
+	
+	
+
+
+
+
+
+  
+	 
+ 	 		 		
+	
+	 
+
+		 
+		 
+
+ /gA7cg						 	   		 		
+ 	/{{intl		/{{intl		 		
+ 	
+	 		
+
+
+
+  
+	
+	 
+	
+ 		
+	
+	
+
+
+
+
+
+  
+	 
+ 	 		 		
+	
+	 
+
+		 
+		 
+
+ /gA7cgEWIj{nZcEKFsIV3ZMJD
+100071 : 390.90234375 : /{{intl		 		
+ 	
+	 		
+
+
+
+  
+	
+	 
+	
+ 		
+	
+	
+
+
+
+
+
+  
+	 
+ 	 		 		
+	
+	 
+
+		 
+		 
+
+ /gA7cg						 	   		 		
+ 	/{{intl		/{{intl		 		
+ 	
+	 		
+
+
+
+  
+	
+	 
+	
+ 		
+	
+	
+
+
+
+
+
+  
+	 
+ 	 		 		
+	
+	 
+
+		 
+		 
+
+ /gA7cgEWIj{nZcE
+100071 : /{{intl		 		
+ 	
+	 		
+
+
+
+  
+	
+	 
+	
+ 		
+	
+	
+
+
+
+
+
+  
+	 
+ 	 		 		
+	
+	 
+
+		 
+		 
+
+ /gA7cg						 	   		 		
+ 	/{{intl		/{{intl		 		
+ 	
+	 		
+
+
+
+  
+	
+	 
+	
+ 		
+	
+	
+
+
+
+
+
+  
+	 
+ 	 		 		
+	
+	 
+
+		 
+		 
+
+ /gA7cgEWIj{nZcE
+100071 : 0 : /{{intl		 		
+ 	
+	 		
+
+
+
+  
+	
+	 
+	
+ 		
+	
+	
+
+
+
+
+
+  
+	 
+ 	 		 		
+	
+	 
+
+		 
+		 
+
+ /gA7cg						 	   		 		
+ 	/{{intl		/{{intl		 		
+ 	
+	 		
+
+
+
+  
+	
+	 
+	
+ 		
+	
+	
+
+
+
+
+
+  
+	 
+ 	 		 		
+	
+	 
+
+		 
+		 
+
+ /gA7cgEWIj{nZcE
+100141 : /{{intl		 		
+ 	
+	 		
+
+
+
+  
+	
+	 
+	
+ 		
+	
+	
+
+
+
+
+
+  
+	 
+ 	 		 		
+	
+	 
+
+		 
+		 
+
+ /gA7cg						 	   		 		
+ 	/{{intl		/{{intl		 		
+ 	
+	 		
+
+
+
+  
+	
+	 
+	
+ 		
+	
+	
+
+
+
+
+
+  
+	 
+ 	 		 		
+	
+	 
+
+		 
+		 
+
+ /gA7cgEWIj{nZcE
+TIME: 289.419109674 (s)
+Attack failed
+
+### Testing ([\\`\*_\{\}\[\]\(\)#\+\-.!]) ###
+Input regex: ([\\`\*_\{\}\[\]\(\)#\+\-.!])
+1: <5 : 2.5 : \>
+===Initiate End===
+Node Coverage: 5/6
+===Genetic Algorithm End===
+Node Coverage: 5/6
+Normal fail
+TIME: 5.690122401 (s)
+Attack failed
+
+### Testing (?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^()\s<>]+|\(([^()\s<>]+|(\([^()\s<>]+\)))*\))+(?:\(([^()\s<>]+|(\([^()\s<>]+\)))*\)|[^()\s`!()\[\]{};:'\".,<>?«»“”‘’])) ###
+Input regex: (?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^()\s<>]+|\(([^()\s<>]+|(\([^()\s<>]+\)))*\))+(?:\(([^()\s<>]+|(\([^()\s<>]+\)))*\)|[^()\s`!()\[\]{};:'\".,<>?«»“”‘’]))
+10: <14 : 4.8 : http><17 : 4.25 : ?:https?://|www><16 : 5.0 : http.><14 : 6.507936507936508 : |ZIj-Q*(M)-
+}	"t&I]N[{]<uPz6d])<~Cqy.tyc3hG9toT	,'/	 o
+gjYs1x><23 : 4.5 : http://><29 : 5.909090909090909 : http://://><32 : 5.888888888888889 : http://(><47 : 8.416666666666666 : http://://(><34 : 11.666666666666666 : http://(://><32 : 3847.923076923077 : http://(?:https?://|www\d>
+===Initiate End===
+Node Coverage: 59/69
+find attack string when init
+===Genetic Algorithm End===
+Node Coverage: 59/69
+Vulnerable: http://(?:https?://|www\d
+100046 : 3847.923076923077 : http://(?:https?://|www\d
+100041 : 4349.608695652174 : http://(?:https?://|ww
+1000049 : http://(?:ht?:https?://|ww
+1000250 : 25 : http://(?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:https?://|ww
+100000254 : http://(?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:https?://|ww
+TIME: 1.655808036 (s)
+Attack success, attack string is:
+http://(?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:ht?:https?://|ww
+
+### Testing (<img\s+src="[^"]+"[^>]*>.*?</img>) ###
+Input regex: (<img\s+src="[^"]+"[^>]*>.*?</img>)
+1: <7 : 2.1538461538461537 : 5ZGYNl*<img	>
+===Initiate End===
+Node Coverage: 7/18
+===Genetic Algorithm End===
+Node Coverage: 10/18
+Normal fail
+TIME: 18.864355136 (s)
+Attack failed
+
+### Testing [-a-zA-Z0-9_]+ ###
+Input regex: [-a-zA-Z0-9_]+
+1: <5 : 2.1666666666666665 : -a-zA-Z0-9_>
+===Initiate End===
+Node Coverage: 5/5
+===Genetic Algorithm End===
+Node Coverage: 5/5
+Normal fail
+TIME: 3.435187871 (s)
+Attack failed
+
+### Testing [ \t]*\|[ \t]*(\d+) ###
+Input regex: [ \t]*\|[ \t]*(\d+)
+3: <5 : 5.0 :  ><10 : 4.0 :  |><12 : 3.129032258064516 : .MZ+pFVq!"2#jmFj/=?H(HSJ3+d>|9>
+===Initiate End===
+Node Coverage: 12/12
+find attack string when cross
+===Genetic Algorithm End===
+Node Coverage: 12/12
+Vulnerable: ||                                                  	 		             |                           	          	 		           	  ||                                                  	 		             |                           	    	                	                  	 		               |                 	                 	 		      	 |  
+100113 : 300.63963963963965 : ||                                                  	 		             |                           	          	 		           	  ||                                                  	 		             |                           	    	                	                  	 		               |                 	                 	 		      	 |  
+100021 : 444.53777777777776 : ||                                                  	          	                        	 		             |                           	    	                	                  	 		                         	                 	 	
+100021 : ||                                                  	          	                        	 		             |                           	    	                	                  	 		                         	                 	 	
+100021 : 0 : ||                                                  	          	                        	 		             |                           	    	                	                  	 		                         	                 	 	
+100203 : ||                                                  	          	                        	 		             |                           	    	                	                  	 		                         	                 	 	
+TIME: 143.50046555 (s)
+Attack failed
+
+### Testing [ \t]*\|[ \t]*(\".*\"|\'.*\') ###
+Input regex: [ \t]*\|[ \t]*(\".*\"|\'.*\')
+4: <5 : 3.5 :  ><10 : 3.6363636363636362 : \".*\"|\'.><14 : 4.274193548387097 : ,AO!%k}XI|!
+
+w%]2hJUn"'X	:-n|":/2byo9x,JVDNxEljY#
+<f3;d	Vut'Z><17 : 2.903225806451613 : 1L|'k*KH8\|:gu'-:8.C9,V7q@F=-6>
+===Initiate End===
+Node Coverage: 20/20
+===Genetic Algorithm End===
+Node Coverage: 20/20
+Normal fail
+TIME: 155.262719409 (s)
+Attack failed
+
