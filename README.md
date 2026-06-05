@@ -31,14 +31,6 @@ ReDoSHunter plays a central role due to its combined **static + dynamic** analys
 
 ## Prerequisites & Dependencies
 
-### General Requirements
-- Python 3  
-- Java Runtime Environment (JRE)  
-- Docker (for running Ollama)  
-- GitHub API token (for scraping repos)
-
----
-
 ### LLM Automation Pipeline
 - Python packages (venv recommended)
 - Ollama engine + llama3.1 model  
