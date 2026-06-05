@@ -81,7 +81,7 @@ ReDoSHunter plays a central role due to its combined **static + dynamic** analys
 
 ## Results
 
-### Table 3 — LLM Regexes
+### Table - LLM Regexes
 
 | ReDoS Pattern Type | ReDoSHunter | Regexploit | ReScue |
 |--------------------|-------------|------------|--------|
@@ -96,7 +96,7 @@ ReDoSHunter plays a central role due to its combined **static + dynamic** analys
 
 ---
 
-### Table 4 — GitHub Regexes
+### Table - GitHub Regexes
 
 | ReDoS Pattern Type | ReDoSHunter | Regexploit | ReScue |
 |--------------------|-------------|------------|--------|
