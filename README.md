@@ -1,8 +1,8 @@
 # Evaluation of ReDoS Detection Tools on LLM‑Generated Regexes vs. GitHub Regexes
 
-This project evaluates three ReDoS detection tools — **ReDoSHunter**, **ReScue**, and **Regexploit** — on two regex populations:
+This project evaluates three ReDoS detection tools: **ReDoSHunter**, **ReScue**, and **Regexploit** on two regex populations:
 
-1. **LLM‑generated regexes** (produced using an automated Ollama pipeline)
+1. **LLM‑generated regexes using Ollama**
 2. **Regexes extracted from real GitHub repositories**
 
 The goal is to compare detection coverage, identify which ReDoS pattern types occur in each dataset, and understand how the tools complement each other.  
