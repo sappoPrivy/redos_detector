@@ -16,7 +16,7 @@ url = "https://api.github.com/search/repositories?q=web+app+language:python&sort
 
 # Auth Token for Github 
 headers = {
-  'Authorization': 'Token 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'
+  'Authorization': 'Token '
 }
 
 # append the found repos/users here
